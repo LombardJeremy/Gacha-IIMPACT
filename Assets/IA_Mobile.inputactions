@@ -1,0 +1,74 @@
+{
+    "name": "IA_Mobile",
+    "maps": [
+        {
+            "name": "Mobile",
+            "id": "0a828e5d-092f-4234-9b6b-763e4db26a4f",
+            "actions": [
+                {
+                    "name": "TouchPosition",
+                    "type": "Value",
+                    "id": "7ee07da7-eb92-49c7-85bb-642f82b6d3e1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SinglePress",
+                    "type": "Button",
+                    "id": "59fbc2ad-ba8e-4cf7-acd2-e944cb252c90",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HoldPress",
+                    "type": "Button",
+                    "id": "07e20682-1ea7-41c8-9e52-96710f98e4d1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5ec78d12-e530-442b-9141-41756710e7fe",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f37cd782-72bc-419c-a07d-7fb6b03f36cd",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SinglePress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3308272d-4d30-406d-8ea6-c5e7ec495e86",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
