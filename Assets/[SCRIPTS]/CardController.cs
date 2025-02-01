@@ -3,6 +3,7 @@ using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
+[RequireComponent(typeof(Bounce))]
 public class CardController : MonoBehaviour, Iinteractable
 {
 
@@ -13,9 +14,9 @@ public class CardController : MonoBehaviour, Iinteractable
     private Vector2 touchPosition;
     private Vector3 _originalRotation;
 
-    [SerializeField] private float maxMagnitudeLenght;
+    [SerializeField] private float maxMagnitudeLenght  = 5;
 
-    [SerializeField] private float rotationStrengh;
+    [SerializeField] private float rotationStrengh = 13.5f;
     private void Awake()
     {
         _bounce = GetComponent<Bounce>();

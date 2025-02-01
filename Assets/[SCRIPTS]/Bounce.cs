@@ -6,7 +6,7 @@ public class Bounce : MonoBehaviour
 {
       private float _bounceForce = 1f;
      private float _bounceDuration = 0.05f;
-    [SerializeField] private float _bounceDecreaseSpeed = 1.5f;
+    [SerializeField] private float _bounceDecreaseSpeed = 3f;
     private Vector3 originalScale;
     private void Start()
     {
